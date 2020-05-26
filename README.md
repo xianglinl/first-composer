@@ -1,7 +1,7 @@
 # first-composer
 第一次尝试写自己的composer
 
-1.在GitHub上创建一个自己的项目，然后拉取到本地
+1.在[GitHub](https://github.com/XianglinLiu/first-composer)上创建一个自己的项目，然后拉取到本地
 
 `git clone https://github.com/XianglinLiu/first-composer.git`
 
@@ -35,7 +35,7 @@ composer init #一路回车就可
 
 `mkdir src`
 
-4.新建测试文件.`Test.php` 并声明命名空间
+4.新建测试文件.`TestComposer.php` 并声明命名空间
 
 ```php
 <?php
@@ -139,14 +139,14 @@ vim .gitignore
 10.提交代码到GitHub
 
 ```
-git add . && 
-git commit -m ':rocket: 这个第一次自己写composer 组件' && 
+git add .  
+git commit -m ':rocket: 这个第一次自己写composer 组件'  
 git pull && git push
 ```
 
 11.检测compser包 [packagist.org](https://packagist.org/packages/submit)
 
-12.检测正常，点击提交即可,提交成功将会跳转到已发布包的[地址](https://packagist.org/packages/xianglin/composer-lear)
+12.检测正常，点击提交即可,提交成功将会跳转到已发布包的[地址](https://packagist.org/packages/xianglin/first-composer)
 
 13.打包命令,我是直接在GitHub上打包的。
 ```bash
@@ -159,10 +159,19 @@ git pull && git push
 composer require xianglin/first-composer
 ```
 
-15.执行命令 输出时间 (`可能需要修改index.php require_once`)
+15.在`vendor`同级目录写一个测试文件`index.php`
+```php
+<?php
+require_once('autoload.php');
 
+use firstComposer\TestComposer;
+
+(new TestComposer())->showTime();
 ```
-php vendor/xianglin/first-composer/exp/index.php
+
+```bash
+php vendor/index.php 
+时北京时间: 2020-05-26 12:47:24%
 ```
 
 
