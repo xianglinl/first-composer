@@ -1,0 +1,17 @@
+{
+  "name": "xianglin/first-composer",
+  "description": "this is a test framework",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "xianglin",
+      "email": "793101759@qq.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "firstComposer\\": "src/"
+    }
+  },
+  "require": {}
+}
