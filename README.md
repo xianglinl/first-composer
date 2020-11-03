@@ -171,7 +171,7 @@ use firstComposer\TestComposer;
 
 ```bash
 php vendor/index.php 
-时北京时间: 2020-05-26 12:47:24%
+当时北京时间: 2020-05-26 12:47:24%
 ```
 
 
